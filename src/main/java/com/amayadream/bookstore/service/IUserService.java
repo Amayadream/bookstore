@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
+ * 用户服务接口
  * @author :  Amayadream
  * @date :  2016.02.15 16:35
  */

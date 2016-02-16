@@ -11,10 +11,14 @@ import org.springframework.stereotype.Repository;
 public class User {
     public String userid;       //用户名
     public String password;     //密码
+    public String head;         //头像
+    public String profile;      //简介
+    public int sex;             //性别
+    public String birthday;     //出生日期
     public String firsttime;    //注册时间
     public String lasttime;     //最后登录时间
     public int status;          //状态, 1:正常, 0:禁用 -1:未激活
-    public String code;     //激活码
+    public String code;         //激活码
 
     public String getUserid() {
         return userid;
@@ -30,6 +34,38 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHead() {
+        return head;
+    }
+
+    public void setHead(String head) {
+        this.head = head;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getFirsttime() {
