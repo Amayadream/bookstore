@@ -11,19 +11,19 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 /**
- * 登录注销控制器
+ * 身份验证控制器
  * @author :  Amayadream
  * @date :  2016.02.15 16:41
  */
 @Controller
 @RequestMapping(value = "auth")
-public class LoginController {
+public class AuthController {
     @Resource private IUserService userService;
 
     /**
      * 登录
      * @param user
-     * @param model
+     * @param attributes
      * @param session
      * @return
      */
@@ -36,7 +36,7 @@ public class LoginController {
 
     /**
      * 注销
-     * @param model
+     * @param attributes
      * @param session
      * @return
      */
@@ -45,6 +45,11 @@ public class LoginController {
         Result result = userService.logout(session);
         attributes.addFlashAttribute("message", result.get("msg"));
         return "redirect:/login";
+    }
+
+    @RequestMapping(value = "register")
+    public String register(User user, RedirectAttributes redirectAttributes){
+        return null;
     }
 
 }
