@@ -27,6 +27,12 @@ public class HistoryServiceImpl implements IHistoryService {
         return historyDao.selectByUserid(start, end, userid);
     }
 
+    @Override
+    public int count(int pageSize) {
+        int pageCount = Integer.parseInt(historyDao.count().getUserid());
+        return pageCount % pageSize == 0 ? pageCount/pageSize : pageCount/pageSize + 1;
+    }
+
     public History selectById(String id) {
         return historyDao.selectById(id);
     }

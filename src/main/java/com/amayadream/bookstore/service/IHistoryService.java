@@ -12,6 +12,7 @@ import java.util.List;
  */
 public interface IHistoryService {
     List<History> selectByUserid(int page, int pageSize, String userid);
+    int count(int pageSize);
     History selectById(String id);
     History selectByBookid(String userid, String bookid);
     boolean insert(History history);

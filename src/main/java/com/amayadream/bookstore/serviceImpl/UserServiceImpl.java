@@ -48,6 +48,10 @@ public class UserServiceImpl implements IUserService {
         return userDao.selectAll(start, end);
     }
 
+    public User selectByUserid(String userid) {
+        return userDao.selectByUserid(userid);
+    }
+
     public int count(int pageSize) {
         int pageCount = Integer.parseInt(userDao.count().getUserid());
         return pageCount % pageSize == 0 ? pageCount/pageSize : pageCount/pageSize + 1;

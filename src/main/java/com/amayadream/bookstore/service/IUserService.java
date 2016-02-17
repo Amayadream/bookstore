@@ -16,6 +16,7 @@ public interface IUserService {
     Result login(String userid, String password, HttpSession session);
     Result logout(HttpSession session);
     List<User> selectUserList(int page, int pageSize);
+    User selectByUserid(String userid);
     int count(int pageSize);
     Result insert(User user);
     Result update(User user);

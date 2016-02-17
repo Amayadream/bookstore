@@ -13,6 +13,7 @@ import java.util.List;
 @Service(value = "historyDao")
 public interface IHistoryDao {
     List<History> selectByUserid(@Param("start") int start, @Param("end") int end, @Param("userid") String userid);
+    History count();
     History selectById(String id);
     History selectByBookid(String userid, String bookid);
     boolean insert(History history);
