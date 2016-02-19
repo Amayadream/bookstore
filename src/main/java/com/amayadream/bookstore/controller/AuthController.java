@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 /**
- * 身份验证控制器
+ * 验证控制器
  * @author :  Amayadream
  * @date :  2016.02.15 16:41
  */
@@ -47,6 +47,12 @@ public class AuthController {
         return "redirect:/login";
     }
 
+    /**
+     * 用户注册
+     * @param user
+     * @param redirectAttributes
+     * @return
+     */
     @RequestMapping(value = "register")
     public String register(User user, RedirectAttributes redirectAttributes){
         return null;

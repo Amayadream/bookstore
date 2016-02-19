@@ -12,7 +12,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.annotation.Resource;
 
 /**
- * 个人信息设置控制器
+ * 个人信息设置控制器<br>
+ * 这里属于个人信息修改页面,为了安全,用户名是从session中取得
  * @author :  Amayadream
  * @date :  2016.02.16 22:37
  */

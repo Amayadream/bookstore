@@ -19,4 +19,9 @@ public class RouteController {
     public String login(){
         return "login";
     }
+
+    @RequestMapping(value = "register")
+    public String register(){
+        return "apps/register";
+    }
 }
