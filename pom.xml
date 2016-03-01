@@ -34,6 +34,22 @@
     </dependency>
     <!-- WebSocket配置结束-->
 
+    <!-- Mongo-Java-driver配置开始 -->
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongo-java-driver</artifactId>
+      <version>3.2.2</version>
+    </dependency>
+    <!-- Mongo-Java-driver配置结束 -->
+
+    <!-- Spring-data-mongo配置开始 -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-mongodb</artifactId>
+      <version>1.8.4.RELEASE</version>
+    </dependency>
+    <!-- Spring-data-mongo配置结束 -->
+
     <!-- oracle jdbc 配置开始 -->
     <dependency>
       <groupId>com.oracle</groupId>

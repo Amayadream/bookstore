@@ -16,7 +16,7 @@
 
     <!-- 引入jdbc配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:jdbc.properties" />
+        <property name="location" value="classpath:datasource/jdbc.properties" />
     </bean>
 
     <!-- 配置数据源 -->
@@ -57,5 +57,7 @@
     </bean>
     <!-- 开启@Transactional实现注解事务 -->
     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+
+    <!--<import resource="classpath:datasource/mongo-config.xml"/>-->
 
 </beans>
