@@ -6,4 +6,3 @@
 <script src="${ctx}/static/plugins/jquery/jquery-1.9.1.min.js"></script>
 <script src="${ctx}/static/plugins/semantic-ui/js/semantic.min.js"></script>
 <script src="${ctx}/static/plugins/semantic-ui/components/dropdown.min.js"></script>
-<script src="${ctx}/static/plugins/layer/layer.js"></script>
