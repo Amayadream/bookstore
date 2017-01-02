@@ -14,15 +14,15 @@
     <div class="ui menu menu">
         <div class="header item"><i class="icon book"></i>叮叮书城</div>
         <a class="item">首页</a>
-        <a class="item" href="${ctx}/book/xuanhuanxiaoshuo">玄幻小说</a>
-        <a class="item" href="${ctx}/book/xiuzhenxiaoshuo">修真小说</a>
-        <a class="item" href="${ctx}/book/dushixiaoshuo">都市小说</a>
-        <a class="item" href="${ctx}/book/lishixiaoshuo">历史小说</a>
-        <a class="item" href="${ctx}/book/wangyouxiaoshuo">网游小说</a>
-        <a class="item" href="${ctx}/book/kehuanxiaoshuo">科幻小说</a>
-        <a class="item" href="${ctx}/book/nvpinxiaoshuo">女频小说</a>
+        <a class="item" href="${ctx}/xuanhuanxiaoshuo">玄幻小说</a>
+        <a class="item" href="${ctx}/xiuzhenxiaoshuo">修真小说</a>
+        <a class="item" href="${ctx}/dushixiaoshuo">都市小说</a>
+        <a class="item" href="${ctx}/lishixiaoshuo">历史小说</a>
+        <a class="item" href="${ctx}/wangyouxiaoshuo">网游小说</a>
+        <a class="item" href="${ctx}/kehuanxiaoshuo">科幻小说</a>
+        <a class="item" href="${ctx}/nvpinxiaoshuo">女频小说</a>
         <a class="item">排行榜单</a>
-        <a class="item" href="${ctx}/book/wanbenxiaoshuo">完本小说</a>
+        <a class="item" href="${ctx}/wanbenxiaoshuo">完本小说</a>
         <%--<div class="right menu">--%>
             <%--<div class="item">--%>
                 <%--<div class="ui action left icon input">--%>
@@ -41,10 +41,10 @@
                     <div class="ui items">
                         <div class="item">
                             <div class="image">
-                                <a href="${item.bookUrl}" target="_blank"><img src="${item.bookImage}"  alt="${item.bookName}" style="width: 175px; height: 188px"></a>
+                                <a href="${ctx}/book${item.bookUrl}" target="_blank"><img src="${item.bookImage}"  alt="${item.bookName}" style="width: 175px; height: 188px"></a>
                             </div>
                             <div class="content">
-                                <a class="header" href="${item.bookUrl}" target="_blank">${item.bookName}</a>
+                                <a class="header" href="${ctx}/book${item.bookUrl}" target="_blank">${item.bookName}</a>
                                 <div class="meta">
                                     <span>${item.author}</span>
                                 </div>
@@ -64,10 +64,10 @@
                     <div class="ui items">
                         <div class="item">
                             <div class="image">
-                                <a href="${item.bookUrl}" target="_blank"><img src="${item.bookImage}"  alt="${item.bookName}" style="width: 175px; height: 188px"></a>
+                                <a href="${ctx}/book${item.bookUrl}" target="_blank"><img src="${item.bookImage}"  alt="${item.bookName}" style="width: 175px; height: 188px"></a>
                             </div>
                             <div class="content">
-                                <a class="header" href="${item.bookUrl}" target="_blank">${item.bookName}</a>
+                                <a class="header" href="${ctx}/book${item.bookUrl}" target="_blank">${item.bookName}</a>
                                 <div class="meta">
                                     <span>${item.author}</span>
                                 </div>
@@ -86,8 +86,8 @@
                 <c:forEach items="${latest}" var="item">
                     <tr>
                         <td>${item.s1}</td>
-                        <td><a href="${item.bookUrl}" target="_blank">${item.s2}</a></td>
-                        <td><a href="${item.latestUrl}" target="_blank">${item.s3}</a></td>
+                        <td><a href="${ctx}/book${item.bookUrl}" target="_blank">${item.s2}</a></td>
+                        <td><a href="${ctx}/book${item.latestUrl}" target="_blank">${item.s3}</a></td>
                         <td>${item.s4}</td>
                         <td>${item.s5}</td>
                     </tr>
@@ -99,7 +99,7 @@
                 <c:forEach items="${good}" var="item">
                     <tr>
                         <td>${item.s1}</td>
-                        <td><a href="${item.bookUrl}" target="_blank">${item.s2}</a></td>
+                        <td><a href="${ctx}/book${item.bookUrl}" target="_blank">${item.s2}</a></td>
                         <td>${item.s5}</td>
                     </tr>
                 </c:forEach>
