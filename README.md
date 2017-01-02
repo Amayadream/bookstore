@@ -14,8 +14,8 @@ Jsoup(解析html) / semantic-ui(前端展示)
 
 ## 附截图
 频道页面
-![频道页面](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/channel.jpg)
+![频道页面](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/preview/channel.png)
 章节列表
-![章节列表](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/list.jpg)
+![章节列表](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/preview/list.png)
 内容页面
-![内容页面](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/content.jpg)
+![内容页面](https://raw.githubusercontent.com/Amayadream/bookstore/master/src/main/webapp/static/source/img/preview/content.png)
