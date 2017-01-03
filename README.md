@@ -3,6 +3,7 @@
 
 ## 2.所用技术
 Java语言,  项目用MAVEN构建,  框架是Spring+Spring MVC+Spring-data-mongo(mongo没有用上)
+
 Jsoup(解析html) / semantic-ui(前端展示)
 
 ## 3.待完成
